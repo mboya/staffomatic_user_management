@@ -30,3 +30,4 @@
 .idea/.rakeTasks
 *.xml
 *.iml
+.idea*
