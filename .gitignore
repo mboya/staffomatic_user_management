@@ -26,3 +26,7 @@
 # Ignore master key for decrypting credentials and more.
 # /config/credentials/*.key
 .github/workflows/rspec_docker_compose.yml.backup
+.idea/.generators
+.idea/.rakeTasks
+*.xml
+*.iml
