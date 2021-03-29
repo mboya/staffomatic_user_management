@@ -115,3 +115,13 @@ $ curl --header \
         --header "Content-Type: application/json" \
         http://localhost:3189/users
 ```
+
+### Archive User
+#### (PATCH /users/:user_id?archive)
+
+```bash
+$ curl --request PATCH --header \
+        "Authentication: Bearer JWT_TOKEN" \
+        --header "Content-Type: application/json" \
+        http://localhost:3189/users/:user_id/archive
+```
