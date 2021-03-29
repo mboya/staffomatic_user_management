@@ -2,7 +2,7 @@ class AuthenticationsController < ApplicationController
   skip_before_action :authorize!
 
   def create
-    user = User.find_by(email: authentication_params[:email])
+    user = User.active.find_by(email: authentication_params[:email])
 
     if user && user.authenticate(authentication_params[:password])
       token = JwtAuthenticationService.encode_token({ user_id: user.id })
